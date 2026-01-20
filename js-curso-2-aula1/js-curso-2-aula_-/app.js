@@ -1,5 +1,5 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 40
+let numeroLimite = 50;
 let numeroSecreto = gerarNumero();
 console.log('Número secreto (inicial):', numeroSecreto);
 let tentativas = 1 ;function exibirTextoNaTela(tag, texto) {
@@ -97,3 +97,4 @@ function reiniciarJogo() {
     console.log('Número secreto (reiniciado):', numeroSecreto);
 
 }
+
