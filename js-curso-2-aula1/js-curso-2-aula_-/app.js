@@ -1,7 +1,7 @@
 let listaDeNumerosSorteados = [];
 let numeroLimite = 100;
 let numeroSecreto = gerarNumero();
-console.log(numeroSecreto)
+console.log('Número secreto (inicial):', numeroSecreto);
 let tentativas = 1 ;function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
@@ -21,7 +21,9 @@ function exibirMensagemInicial(){
 }
 
 function verificarChute (){
-    let chute = document.querySelector('input').value;
+    let chute = parseInt(document.querySelector('input').value, 10);
+
+    console.log(`Chute: ${chute} | Secreto: ${numeroSecreto}`);
 
      let palavraTentativa = tentativas > 1 ? 'tentativas': 'tentativa';
 
@@ -73,10 +75,10 @@ function gerarNumero(){
         return numeroEscolhido;
     }}
 function limparCampo(){
-
-    chute = document.querySelector('input');
-
-    chute.value= '';
+    let campo = document.querySelector('input');
+    if (campo) {
+        campo.value = '';
+    }
     
 }
 
@@ -92,5 +94,6 @@ function reiniciarJogo() {
 
     exibirMensagemInicial();
 
-    console.log(numeroSecreto);
+    console.log('Número secreto (reiniciado):', numeroSecreto);
+
 }
