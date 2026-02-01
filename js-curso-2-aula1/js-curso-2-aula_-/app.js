@@ -1,9 +1,5 @@
-let listaDeNumerosSorteados = [];
-<<<<<<< HEAD
+let listaDeNumerosSorteados = []
 let numeroLimite = 51
-=======
-let numeroLimite = 51;
->>>>>>> 1f1a0a5be39ce4e9a8bf8355a617c336c7c1e32f
 let numeroSecreto = gerarNumero();
 console.log('Número secreto (inicial):', numeroSecreto);
 let tentativas = 1 ;function exibirTextoNaTela(tag, texto) {
