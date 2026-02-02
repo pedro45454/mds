@@ -1,4 +1,4 @@
-let listaDeNumerosSorteados = []
+let listaDeNumerosSorteados = [];
 let numeroLimite = 51
 let numeroSecreto = gerarNumero();
 console.log('Número secreto (inicial):', numeroSecreto);
