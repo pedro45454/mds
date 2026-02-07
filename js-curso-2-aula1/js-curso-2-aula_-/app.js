@@ -97,4 +97,3 @@ function reiniciarJogo() {
     console.log('Número secreto (reiniciado):', numeroSecreto);
 
 }
-
